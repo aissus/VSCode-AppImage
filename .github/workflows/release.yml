@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install libfuse2
-        run: sudo apt-get install -y libfuse2 imagemagick   
+        run: sudo apt-get install -y libfuse2 imagemagick --fix-missing  
       - name: Build
         id: build
         uses: valicm/appimage-bash@main
